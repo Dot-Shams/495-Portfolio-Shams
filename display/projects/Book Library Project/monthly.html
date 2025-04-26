@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Monthly Recommendations</title>
+</head>
+<body>
+    <header>The Self Improvement Club!</header>
+
+    <h1> Monthly Recommendations </h1>
+
+    <h2></h2>
+
+    <nav>
+        <a  href="Home.html">Home Page</a> 
+        <a  href="PsychPage.html">Psychology Books</a>
+        <a  href="Philosophy.html">Philosophy Books</a> 
+        <a  href="Comm.html">Communication Books</a> 
+        <a  href="monthly.html">Book of the Month</a>   
+    </nav>
+    
+    <div class="cont">
+
+        <div class="content">
+        <img src="imgs/51jg1GHF5aL._SL1500_.jpg" alt = "The Almanac of Naval Ravikant.">
+
+
+        <section>
+            <p>
+                My favorite book of the month is the The Almanac of Naval Ravikant.
+                <br>
+
+                Do you have a favorite book? Let me know of your Recommendations.
+            </p>
+
+        </section>
+
+        </div>
+
+
+
+        <div class="content">
+            <h1>Book Information Form</h1>
+            <p>Please fill out the form below with details about the book.</p>
+            <form action="/submit-book" method="POST">
+                <label for="book-title">Book Title:</label>
+                <input type="text" id="book-title" name="book-title" placeholder="Enter the book's title" required>
+        
+                <label for="book-location">Where to Find the Book:</label>
+                <input type="text" id="book-location" name="book-location" placeholder="Enter where the book can be found" required>
+        
+                <label for="book-description">Brief Description:</label>
+                <textarea id="book-description" name="book-description" rows="4" placeholder="Enter a brief description of the book" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

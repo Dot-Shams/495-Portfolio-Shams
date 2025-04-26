@@ -1,0 +1,203 @@
+$txtclr: rgb(240,240,240);
+$font-stack: "Robotohoho",Monospace;
+/* forget about the font for now. continue on the skeleton */
+$bgclr: rgba(3,3,3,.4);
+$highlight: rgba(75, 75, 75, 0.492);
+$emptytext: rgba(255, 190, 1, 0.3);
+
+@mixin theme {
+    border: solid rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    padding: 5px;
+    width: auto;
+    margin: 10px;
+    background-color: $bgclr;
+}
+
+body, html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Robotohoho";
+    src: url(../Roboto/Roboto-Light.ttf);
+    src: url(../Roboto/Roboto-LightItalic.ttf);
+    src: url(../Roboto/Roboto-Bold.ttf);
+    src: url(../Roboto/Roboto-BoldItalic.ttf);
+    src: url(../Roboto/Roboto-Italic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+figure { 
+    @include theme;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+figure:hover, a:hover {
+    background-color: rosybrown;
+    transition: ease-in, 2s;
+    transition-duration: 1s;
+    color: whitesmoke;
+    border-radius: 20px
+
+
+}
+
+figcaption { 
+    @include theme;
+    display: flex; 
+}
+
+.hero {
+    background-image: linear-gradient( rgb(200, 171, 122), (rgba(0,0,0,.6))), url("../imgs/herosk.jpg");
+    /* the issue that occured here had nothing to do with me but rather  having to reset vs code and the pc */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    color: $txtclr;
+    font-family: $font-stack;
+    background-color: rgba(255, 228, 196, 0.6);
+
+}
+
+img {
+    border-radius: 10px;
+    border: solid rgba(255, 228, 196, 0.422);
+    width: 250px;
+    position:relative;    
+}
+
+header {
+    @include theme;
+    text-align: center;
+}
+
+article {
+    @include theme;
+    color: rgb(255, 255, 255); 
+    
+}
+
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding:0%;
+}
+
+
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ul {
+        list-style: none;
+    }
+
+    li {
+        float: left;
+        padding: 5px;
+        margin: 10px;
+        text-decoration: none;
+    }
+    a {
+        display: block;
+        color: black;
+        border: none;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+
+    a:link {
+        color: black;
+        text-decoration: none;
+        /*note that this will remove any underlines in text links...well almost all of them. the nav bar one is on its own box */
+    }
+
+    a:hover { background-color: $highlight;
+        color: $txtclr;
+        transition-duration: 1s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+    
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+.welcome {
+    text-align: center;
+    @include theme;
+}
+
+footer {
+    @include theme;
+    text-align: center;
+}
+
+
+form {
+    @include theme;
+}
+
+.rules {
+    @include theme;
+    color: rgb(0, 0, 0);
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+}
+
+h2,h3,h4 {
+    @include theme;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.bignav {
+    @include theme;
+}
+
+.Smallicon {
+    width: 20px;
+
+    img { width: 20px;
+    
+    }
+    li {margin: 10px;
+    }
+
+    a {text-decoration: none;
+    }
+}
+
+input:invalid {
+    border: black solid;
+}
+
+input:invalid:required {
+    background-color: $emptytext;
+
+}
+
+textarea:invalid {
+    border: black solid 2px;
+}
+textarea:invalid:required {
+    background-color: $emptytext;
+}

@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+li {
+    margin: 0px ;
+    padding: 5px;
+    transition: background-color 0.2s ease;
+    color: whitesmoke;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.363);
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+}
+
+
+a.active {
+    color: transparent;
+  }
+
+  a.active::before {
+    content: '┐(´∀｀)┌';
+    display: inline-block;
+    color: white;
+  }
+  
+img {
+    border: 1px solid #ff000000; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 2px; /* Some padding */
+    width: 150px; /* Set a small width */
+}
+img:hover {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+:any-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.space {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    width: 70%;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    border-color: rgba(255, 255, 255, 0.226);
+}
+#box1 {
+    color: whitesmoke;
+    height: 50% !important;
+    width: auto !important;
+    text-align: center !important;
+    overflow: visible;
+}
+
+#box2 {
+    background-color: rgba(255, 255, 255, 0.363);
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+    }
+
+#box3 {
+    background-color: rgba(255, 255, 255, 0.363);
+    align-self: center; justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+    
+}      
+#box4 {
+    background-color: rgba(255, 255, 255, 0.363);
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+    
+}
+
+#box5 {
+    color: white;
+    align-self: end;
+    height:55%;
+    font-size: 10px;
+
+}
+
+body {
+    background-image: url("images/earthbound.gif"); 
+    background-size: 80%;
+    font-family: Arial, sans-serif;
+    border: rgba(255, 255, 255, 0.226);
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+    border-width: 5px;
+    font-family: monospace;
+}
+
+
+h2 {
+    align-self: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: monospace;
+
+}
+
+.subtitle {
+    color: white;
+    font-size: 8px !important;
+    font-family: monospace;
+}

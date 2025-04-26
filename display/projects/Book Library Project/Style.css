@@ -1,0 +1,165 @@
+body {
+    background-color: #025958;
+    color: white;
+    font-family: monospace;
+}
+
+header {
+    background-color: #12a3a1;
+    font-size: 500%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    overflow: auto;
+    
+}
+
+nav a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+} 
+
+nav a:hover {
+    background-color: #0259584f;
+}
+
+nav a:active {
+    background-color: black;
+    color: azure;
+}
+
+@media screen and (max-width: 500px) {
+    nav a {
+      float: none;
+      display: flex;
+    }
+}
+
+li {
+    list-style-type: none;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.border {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+img {
+    flex-shrink: 0;
+    height: auto;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 20%;
+    
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(245, 245, 245, 0.5);
+    border: none;
+}
+
+section {
+      border-left: 5px solid red;
+      background-color: rgba(245, 245, 245, 0.75);
+      color: black;
+      padding: 20px;
+      margin: 20px;
+
+}
+
+
+form {
+    max-width: 100%;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:focus, textarea:focus, button:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flex-container img {
+    max-width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+.flex-container img:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+    input, textarea, button {
+        padding: 8px;
+    }
+}
