@@ -5,40 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doodles</title>
     <link rel="stylesheet" href="display/style.css">
+ 
+    <script defer src="main.js"></script>
+    
 </head>
 <body>
+    <div class="background">
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-image" src="" alt="Expanded Thumbnail">
+                <p id="modal-caption"></p>
+            </div>
+        </div>
+        
     <div class="container">
         <div class="box" id="box1">
             <header>
                 <h1>Shams Fassassi</h1>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="illustration.html" class="active">Illustrations</a></li>
-                        <li><a href="3D-modelling.html">3D Modeling</a></li>
-                        <li><a href="dev.html">Development</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/illustration.html" class="active">Illustrations</a></li>
+                        <li><a href="/3D-modelling.html">3D Modeling</a></li>
+                        <li><a href="/dev.html">Development</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
 
-        <section>
+        <main >
+
+        <div class="space">
+            <h2>Illustrations</h2>
             <ul>
-                <li><a href="display/images/KIRBY N VENASUAR.png">
+                <li>
+                    <a href="display/images/KIRBY N VENASUAR.png" class="openModal">
                     <img src="display/images/KIRBY N VENASUAR.png" alt="Kirby and Venusaur" width="100px" height="100px">
                     <p>Kirby and Venusaur</p>
-                </a></li>
-                <li><a href="display/images/frog.png">
-                    <img src="display/images/frog.png" alt="Frog" width="100px" height="100">
+                </a>
+            </li>
+                <li>
+                    <a href="display/images/frog.png" class="openModal">
+                    <img src="display/images/frog.png" alt="Frog" width="100px" height="100px">
                     <p>Frog</p>
-                </a></li>
-                <li><a href="display/images/slacker and a slacking.png">
+                </a>
+            </li>
+                <li>
+                    <a href="display/images/slacker and a slacking.png" class="openModal">
                     <img src="display/images/slacker and a slacking.png" alt="Slacker and a Slacking" width="100px" height="100px">
                     <p>Slacker and a Slacking</p>
-                </a></li>
+                </a>
+            </li>
             </ul>
-        </section>
-    
+        </div>
+        </main>
+
+        <div class="box" id="box5">
+            <h2>About Me</h2>
+            <p>
+                Howdy! I am Shams Fassassi, a fledling developer, 3D modeler, and illustrator. 
+                I am currently a student at the University of Maryland Global Campus, studying Web Development and Computer Science. 
+                I have a passion for creating and learning new things, and I am always looking for new challenges to tackle. In my free time, 
+                I enjoy playing video games, reading books, and powerlifting. 
+            </p>
+    </div>
+
+    </div>
+</div>
+</div>
+</div>
+ 
+    <footer>
+        <p>&copy; 2025 Shams Fassassi. All rights reserved.</p>
+        <p>Website created by Shams Fassassi</p> 
+    </footer>
+
 </body>
 </html>

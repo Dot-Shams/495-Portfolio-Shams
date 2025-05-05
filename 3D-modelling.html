@@ -5,39 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Modeling</title>
     <link rel="stylesheet" href="display/style.css">
+
+    <script defer src="main.js"></script>
+
 </head>
 <body>
+    <div class="background">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-image" src="" alt="Expanded Thumbnail">
+                <p id="modal-caption"></p>
+            </div>
+        </div>
+        
+
     <div class="container">
         <div class="box" id="box1">
             <header>
                 <h1>Shams Fassassi</h1>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="illustration.html">Illustrations</a></li>
-                        <li><a href="3D-modelling.html" class="active">3D Modeling</a></li>
-                        <li><a href="dev.html">Development</a></li>
-                        <li><a href="contact.html">About Me</a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/illustration.html">Illustrations</a></li>
+                        <li><a href="/3D-modelling.html" class="active">3D Modeling</a></li>
+                        <li><a href="/dev.html">Development</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
 
-        <section>
+        <main >
+            <div class="space">
+          
+       
             <h2>3D Modeling Projects</h2>
             <ul>
-                <li><a href="display/images/3D Donut - Shams F.png">3D Modeling
+                <li><a href="display/images/3D Donut - Shams F.png" class="openModal">
                     <img src="display/images/3D Donut - Shams F.png" alt="3D Donut" width="100px" height="100px">
-                </a></li>
-                <li><a href="display/images/P2 -Mug _ Shams F. .png">Coffee Mug
+                    <p>3D Donut</p>
+                </a>
+            </li>
+                <li><a href="display/images/P2 -Mug _ Shams F. .png" class="openModal">
                     <img src="display/images/P2 -Mug _ Shams F. .png" alt="Coffee Mug" width="100px" height="100px">
-                </a></li>
+                    <p>Coffee Mug</p>
+                </a>
+            </li>
 
-                <li><a href="display/images/P4 - Apartment - Shams F.png">Apartment
+                <li><a href="display/images/P4 - Apartment - Shams F.png" class="openModal">
                     <img src="display/images/P4 - Apartment - Shams F.png" alt="Apartment" width="100px" height="100px">
-                </a></li>
+                    <p>Apartment</p>
+                </a>
+            </li>
             </ul>
-        </section>
+        </div>
+        </main> 
+    <div class="box" id="box5">
+        <h2>About Me</h2>
+        <p>
+            Howdy! I am Shams Fassassi, a fledling developer, 3D modeler, and illustrator. 
+            I am currently a student at the University of Maryland Global Campus, studying Web Development and Computer Science. 
+            I have a passion for creating and learning new things, and I am always looking for new challenges to tackle. In my free time, 
+            I enjoy playing video games, reading books, and powerlifting. 
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Shams Fassassi. All rights reserved.</p>
+    <p>Website created by Shams Fassassi</p> 
+</footer>
+
     
 </body>
 </html>
