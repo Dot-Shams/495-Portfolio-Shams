@@ -1,27 +1,24 @@
-// Function to initialize modal functionality
 function initializeModal() {
     const modal = document.getElementById("modal");
     const modalImage = document.getElementById("modal-image");
     const modalCaption = document.getElementById("modal-caption");
-    const closeModal = document.querySelector(".close");
-
-    // Check if modal elements exist
-    if (!modal || !modalImage || !modalCaption || !closeModal) {
-        console.error("Modal elements not found in the DOM.");
-        return;
-    }
+    const modalDescription = document.createElement("p"); // Create a new paragraph for the description
+    const closeModal = document.querySelector(".close"); 
+    modalCaption.insertAdjacentElement("afterend", modalDescription); // Add it below the caption
 
     document.querySelectorAll(".openModal").forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent the default link behavior
+            event.preventDefault(); // Prevent default link behavior
 
-            // Get the image source and caption
+            // Get the image source, caption, and description
             const imgSrc = this.querySelector("img").src;
             const caption = this.querySelector("p").textContent;
+            const description = this.getAttribute("data-description");
 
             // Set modal content
             modalImage.src = imgSrc;
             modalCaption.textContent = caption;
+            modalDescription.textContent = description; // Add the description
 
             // Show the modal
             modal.style.display = "block";
