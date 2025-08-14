@@ -1,2 +1,1 @@
-"# draft-of-portfolio" 
-A lil draft of my CMST 495 Portfolio haha."# 495-Portfolio-Shams" 
+This is my first portfolio. I'll be showcasing small class projects as well as personal projects to showcase my abilities.
